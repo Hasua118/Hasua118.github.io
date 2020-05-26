@@ -1,0 +1,118 @@
+
+.carousel-inner img {
+  width: 100%;
+
+}
+#demo2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-wrapper{
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  padding: 10px;
+  z-index: 1;
+}
+
+.left-option-wrapper{
+  float: left;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+.right-option-wrapper{
+  float: right;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+.title-nek{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size:xx-large;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 15px #000;
+  
+}
+.content-nek{
+  word-break: break-word;
+  text-align: center;
+  white-space: pre-wrap;
+}
+.left-option-wrapper-content button{
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+.right-option-wrapper-content button{
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+}
+.content-nek{
+  color: white;;
+  text-shadow: 3px 3px 15px black;
+  font-family: 'Roboto', sans-serif;
+}
+.btn-primary{
+  background-color: #f1c40f;
+  border: 1px solid white;
+}
+.btn-primary:hover{
+  background-color: #e67e22;
+  border: 1px solid white;
+}
+@media (max-width: 520px){
+  .title-nek{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:small;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 15px #000;
+    
+  }
+  .content-nek{
+    word-break: break-word;
+    text-align: center;
+    text-indent: -99999px;
+  }
+  .btn-primary{
+    font-size: 10px;
+  }
+  .left-option-wrapper-content button{
+    position: absolute;
+    right:40px;
+    bottom:15px;
+
+  }
+  .right-option-wrapper-content button{
+    position: absolute;
+    left:40px;
+    bottom:15px;
+
+  }
+  .carousel-indicators {
+  margin-bottom: 0px;}
+  .carousel-indicators li{
+    width: 12px;
+    height: 2px;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 15px;
+    height: 15px;
+  }
+}
+

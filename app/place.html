@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- font awesome -->
+    <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    
+
+    <link rel="stylesheet" href="./css/place.css">
+    <link rel ="stylesheet" href="./css/home.css">
+    <!-- <link rel ="stylesheet" href="./css/card.css"> -->
+</head>
+
+<body>
+<!-- XXX  header  XXX -->
+    <!-- nav -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+          <a class="navbar-branch mr-4" href="./index.html">
+              <img height="45px" src="./img/logo.JPG" style="border-radius: 50%;">
+              Where to go</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item mr-4">
+                      <a class="nav-link" href="#">Team</a>
+                  </li>      
+              </ul>
+          </div>
+      </div>
+      </nav>
+<!-- XXX  body  XXX -->
+    <!-- banner introduce -->
+    <div class="container-place">
+        <h3>Địa điểm mà bạn nên tới!</h3>
+        <div id ="showRandomResult" class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="slider-container">
+                  <div class="menu-place">
+                  </div>
+                  <div id="slide-wrapper"></div>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 tourNameInfo">
+            </div>
+        </div>
+
+      </div>
+<!--XXX footer XXX-->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-5">
+                    <hr class="light">
+                    <h5>Team</h5>
+                    <hr class="light">
+                    <p>Nguyễn Văn Cường</p>
+                    <p>Nguyễn Hồng Hà</p>
+                    <p>Phùng Minh Huyền</p>
+                    <p>Nguyễn Hữu Đức</p>
+                </div>
+                <div class="col-md-2">
+                    <img height="200px" style="padding-top: 20px;" src="./img/logo.JPG">
+                </div>
+                <div class="col-md-5">
+                    <hr class="light">
+                    <h5>Liên Hệ</h5>
+                    <hr class="light">
+                    <p>wtgmindx@gmail.com</p>
+                    <p>Hanoi, Vietnam</p>
+                    <p>0374523912</p>
+                    <div class="social-media">
+                        <ul>
+                            <a>
+                                <li id="fbnek"><img src="img/FbIcon.png"></li>
+                            </a>
+                            <a>
+                                <li id="googlenek"><img src="./img/instagram.png"></li>
+                            </a>
+                            <a>
+                                <li id="phonenek"><img src="img/messenger.png"></li>
+                            </a>
+                            <a>
+                                <li id="githubnek"><img src="img/zalo.png"></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr class="light-80">
+                    <h5>&copy; Where to go!</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- javaScript -->
+    <script src="./js/random.js"></script>
+
+</body>
+
+</html>

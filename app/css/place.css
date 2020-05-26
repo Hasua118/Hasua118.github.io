@@ -1,0 +1,102 @@
+body{
+  background: linear-gradient(99deg,#3498db,#95a5a6,#8e44ad);;
+}
+/*  place*/
+.container-place{
+  width: 1170px;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+     margin-top: 80px;
+     margin-bottom: 40px;
+ }
+ .slider-container{
+     width: 390px;
+     height: 380px;
+     position: relative;
+      background-color: #ececec;
+     text-align: center;
+     
+   }
+   .tour-name{
+       height: 60px;
+       line-height: 60px;
+       margin-left: 20px;
+       
+   }
+   .tour-name div{
+       text-align: left;
+   }
+   .tour-name div h3{
+     text-align: left;
+ }
+   
+   .menu-place {
+     position: absolute;
+     left: 0;
+     z-index: 900;
+     width: 100%;
+     top:311px;
+     display: flex;
+     overflow-y: auto;
+     
+   }
+   
+   .menu-place label {
+     
+     cursor: pointer;
+     display: inline-block;
+     
+     margin-left: 3px;
+ 
+     
+     
+     margin-left: 3px;
+     transition: all .3s ease;
+    
+   }
+   
+   .slider-container .slide {
+     width: 390px;
+     height: 310px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 10;
+     padding: 8em 1em 0;
+     background-size: cover;
+     background-position: 50% 50%;
+     transition: left 0s .75s;
+     object-fit: scale-down;
+   }
+   
+   [id^="slide"]:checked + .slide {
+     left: 0;
+     z-index: 100;
+     transition: left .65s ease-out;
+   }
+   
+   .container-place table{
+       margin-left: 20px;
+       
+       background-color: #faf8f8;
+   }
+   .container-place tr{ 
+       border-bottom: 1px solid #ddd;
+       border-left: 1px solid #ddd;
+       border-right: 1px solid #ddd;
+       
+   }
+   .container-place td{
+       text-align: left;
+   }
+   .container-place .panel{
+       width: 750px;
+       margin-left: 20px;
+       border: 2px dotted pink;
+   }
+   .btn-reload{
+     margin-top: 10px;
+     margin-left: 20px;
+   }

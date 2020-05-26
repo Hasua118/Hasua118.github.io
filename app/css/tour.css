@@ -1,0 +1,81 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container{
+    max-width: 1500px;
+}
+.tour-deck {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-flow: row wrap;
+}
+.tour {
+    padding: 20px 0px 50px 0px;
+}
+.img-nhd {
+    height: 200px;
+    width: 100% !important;
+    border-radius: .25rem!important;
+    object-fit: cover !important;
+}
+.btn {
+    background-image: linear-gradient(120deg, #3498db, #8e44ad);
+    cursor: pointer;
+    transition: .5s;
+    background-size: 180%;
+}
+.btn:hover {
+    background-position: right;
+}
+.modal-tag{
+    padding: 0px 10px 5px 10px;
+}
+.content-cac-ban-oi h1{
+    margin-bottom: 0px;
+}
+.boc-noi-dung {
+    padding: 10px 15px 15px 15px;
+}
+
+.modal-dialog {
+    overflow-y: initial !important
+}
+
+.modal-body {
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-footer {
+    padding: 2px 12px;
+    justify-content: center;
+}
+.modal-tag a{
+    border: 1px solid black;
+    border-radius: 20px;
+    align-items: center;
+    background-image: linear-gradient(120deg, #3498db, #8e44ad);
+    color:white;
+    padding: 0px 8px;
+    font-weight: 300;
+}
+.modal-footer span{
+    color: tomato;
+}
+.modal-footer p{
+    text-align: start;
+    font-size: 20px;
+}
+.modal-footer p i{
+    color: palevioletred;
+}
+.left-incard-content-wrapper p i {
+    color: palevioletred;
+}
+.incrad-wrapper {
+    display: flex;
+    justify-content: center;
+}

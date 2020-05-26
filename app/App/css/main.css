@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    ;
+    padding: 0px;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+.sign-up-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    background: url(../img/register-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.form-sign-up {
+    min-width: 500px;
+    background: white;
+
+}
+
+.form-sign-up h3,
+.form-sign-in h3 {
+    margin: 50px 0px 50px 0px;
+    font-size: 32px;
+    text-align: center;
+    color: #7b8396;
+}
+
+.input-wrapper input {
+    height: 38px;
+    width: 100%;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.name-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-wrapper>.input-wrapper {
+    width: calc(50% - 5px)
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.form-footer {
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in-container {
+    /* background: url(../img/login-background.jpg) center center no-repeat; */
+    background: url(https://scontent.fhan5-6.fna.fbcdn.net/v/t1.15752-9/96239600_587884725444794_4015107720913879040_n.jpg?_nc_cat=107&_nc_sid=b96e70&_nc_ohc=Dw7QEBFPfegAX_batSv&_nc_ht=scontent.fhan5-6.fna&oh=ebf7a9ae9c0d7c099479041a79def28a&oe=5ED92A8D) left center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.form-sign-in {
+    background: white;
+    min-width: 500px;
+}
+
+.input-wrapper input {
+    height: 38px;
+    width: 100%;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-content>* {
+    margin: 10px 50px;
+    /* dấu * là để dùng tất cả các phần tử trong này */
+}
+
+.aaa {
+    height: 38px;
+    width: 120px;
+    border-radius: 4px;
+    padding: 10px;
+    background: #4482ff;
+    color: white;
+    text-align: center;
+}
+
+.btn-icon {
+background-color: violet;
+width: 120px;
+height: 38px;
+color: white;
+border-radius: 4px;
+text-align: center;
+}
+
+button:hover {
+    cursor: pointer
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 0px;
+
+}
+
+.message-error {
+    color: red;
+}
+
+.message-success {
+    color: green;
+}
+
+button:disabled {
+    background: #f2f2f2;
+}
+
+/* chat */
+
+.chat-container {
+    width: 100%;
+    height: calc(100vh - 38px);
+    display: flex;
+
+}
+
+.list-message-chat {
+    width: 100%;
+    height: calc(100% - 38px);
+    padding: 10px;
+    overflow-y: auto;
+    background-image: url(https://scontent.fhan5-3.fna.fbcdn.net/v/t1.15752-9/96547462_270849414304425_2907651335648182272_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=E-gsc2xNCzMAX-1ut2h&_nc_ht=scontent.fhan5-3.fna&oh=62bead23c125e8c9c37951f059737a44&oe=5ED807A0);
+    background-size: contain;
+}
+
+.list-message-chat>.message-chat {
+    margin-bottom: 10px;
+}
+
+.current-conversation {
+    height: calc(100vh - 38px);
+    width: 70%;
+}
+
+.message-chat>span {
+    max-width: 50%;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #4482ff;
+    border-radius: 5px;
+    color: white;
+    word-break: break-word;
+    background-color:#4482ff;
+}
+
+.message-chat.your {
+
+    /* / viết liền = chỉ đúng class vừa có message vừa có class you */
+    text-align: right;
+}
+
+.message-chat.your>span{
+    color: #4482ff;
+    background-color: white;
+}
+
+.form-add-message-chat {
+    display: flex;
+    width: 100%;
+    height: 38px;
+}
+
+.form-add-message-chat>.input-wrapper {
+    width: calc(100% - 120px);
+    /* width: 100%; để như này nó cx chiếm hết phần còn lại */
+}
+
+/* aside left of chat*/
+.aside-left {
+    width: 15%;
+    /* background: seagreen; */
+}
+
+.list-conversation>.conversation {
+    margin-bottom: 10px;
+}
+
+.list-conversation {
+    /* padding: 10px; */
+    max-height: 60%;
+    overflow-y: auto;
+}
+.list-conversation-wrapper{
+    padding: 5px 10px;
+}
+.conversation-title {
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* font-size:15px */
+}
+
+.conversation-members {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.form-add-conversation {
+    padding: 10px;
+}
+
+/* .form-add-conversation>* {
+    margin-bottom: 10px;
+} */
+/* aside-right */
+.details-current-conversation>*{
+    margin-bottom: 10px;
+}
+.details-current-conversation{
+    padding: 10px;
+}
+.conversation-email {
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.aside-right{
+    width: 15%;
+
+}
+.conversation-create-at{
+    font-size: 10px;
+    font-style: italic;
+}
+.btn-leave-conversation-wapper{
+    padding: 10px;
+}
+.list-conversation-wrapper.current{
+    background-color: gray;
+}
+.list-conversation-wrapper:hover{
+    cursor: pointer;
+}
+.main-nav{
+    height: 38px;
+    display: flex;
+    justify-content: flex-end;
+    
+    background-color: hotpink;
+    color: white;
+}
+.main-nav>*{
+    margin-right: 10px;
+}
+.main-nav div{
+    
+    padding: 10px;
+}

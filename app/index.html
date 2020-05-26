@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhereToGo</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- font awesome -->
+    <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./packet/sweetalert2.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/card.css"> 
+    
+</head>
+
+<body>
+    <div class="scrollTop" onclick="utils.topFunction()"><i class="fad fa-arrow-circle-up fa-2x"></i></div>
+    <div id="app" class="app">
+
+    </div>
+    <!-- javaScript -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-storage.js"></script>
+
+    <script>
+        // var firebaseConfig = {
+        //     apiKey: "AIzaSyA3NW6ESM0eUQqPJY5nlgngGB7EWOC3ulQ",
+        //     authDomain: "findwhat-22783.firebaseapp.com",
+        //     databaseURL: "https://findwhat-22783.firebaseio.com",
+        //     projectId: "findwhat-22783",
+        //     storageBucket: "findwhat-22783.appspot.com",
+        //     messagingSenderId: "232382263700",
+        //     appId: "1:232382263700:web:13e4dbbc316f4694195f81",
+        //     measurementId: "G-1R23YBPPRT"
+        // };
+        const firebaseConfig = {
+            apiKey: "AIzaSyAkQfJktu49QYyz54HTyRzKGg8hmGnRv_Q",
+            authDomain: "wheretogo-b06b7.firebaseapp.com",
+            databaseURL: "https://wheretogo-b06b7.firebaseio.com",
+            projectId: "wheretogo-b06b7",
+            storageBucket: "wheretogo-b06b7.appspot.com",
+            messagingSenderId: "203133340545",
+            appId: "1:203133340545:web:3f6811d3d455d923e5f680",
+            measurementId: "G-H5BLBF9WV7"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        var storage = firebase.storage();
+
+    </script>
+    <script src="./packet/sweetalert2.all.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/model.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/components.js"></script>
+    <script src="./js/view.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/css.js"></script>
+    
+    
+    
+</body>
+
+</html>
